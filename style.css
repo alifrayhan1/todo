@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  margin: 0 auto;
+}
+.main-container {
+  max-width: 426px;
+  height: 100vh;
+  background-color: #b4ebe6;
+  padding: 15px 10px;
+  position: relative;
+}
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.title {
+  font-weight: 500;
+  font-size: 30px;
+}
+.user-action {
+  position: absolute;
+  right: 10px;
+  i {
+    font-size: 30px;
+  }
+}
+.task-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0 0 0;
+}
+.important-task {
+  i {
+    color: black;
+    font-size: 18px;
+  }
+}
+.my-task {
+  a {
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 2px;
+  }
+  a:focus {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 2px;
+  }
+}
+.new-task {
+  a {
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 2px;
+  }
+  a:focus {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 2px;
+  }
+  span {
+    font-size: 18px;
+  }
+}
+.add-task {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: #80cbc4;
+  border-radius: 10px;
+  box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.5);
+  a {
+    font-size: 24px;
+    color: black;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+  }
+}
+.task {
+  ol {
+    margin-left: 30px;
+    margin-top: 20px;
+    font-size: 18px;
+    li {
+      margin: 8px 0;
+    }
+    i {
+      margin-left: 20px;
+    }
+  }
+}
+.input {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 15%;
+  right: 1px;
+  textarea {
+    resize: none;
+    width: 70%;
+  }
+  button {
+    width: 20%;
+    padding: 12px;
+    font-size: 18px;
+  }
+}
+
+.display {
+  display: none;
+}
