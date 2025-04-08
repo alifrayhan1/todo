@@ -15,8 +15,9 @@ newTask.forEach((task) => {
 addButton.addEventListener("click", function (e) {
   e.preventDefault();
   let li = document.createElement("li");
+  li.style.width = "90%";
   if (textarea.value.trim() !== "") {
-    li.innerHTML = `${textarea.value}  <i class="fa-solid fa-trash"></i>`;
+    li.innerHTML = `${textarea.value}  <i class="fa-solid fa-trash"></i><i class="fa-solid fa-pen"></i>`;
     ol.appendChild(li);
   }
   textarea.value = "";
@@ -27,6 +28,14 @@ ol.addEventListener("click", function (e) {
   if (e.target.classList.contains("fa-trash")) {
     const li = e.target.closest("li");
     if (li) {
+      li.remove();
+    }
+  }
+  if (e.target.classList.contains("fa-pen")) {
+    const li = e.target.closest("li");
+    if (li) {
+      document.querySelector(".input").classList.toggle("display");
+      textarea.value = li.innerText;
       li.remove();
     }
   }
